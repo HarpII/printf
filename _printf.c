@@ -1,4 +1,5 @@
-#include "holberton.h"
+#include "main.h"
+
 /**
 * _printf - main function to print in console
 * @format: array to print and check type
