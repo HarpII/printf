@@ -46,3 +46,31 @@ int print_i(va_list ar_list)
 {
 	return (print_d(ar_list));
 }
+
+/**
+ * print_u -prints unsigned int values
+ * @ar_list: store list of arguments
+ * Return: number of characters printed
+ */
+int print_u(va_list ar_list)
+{
+	unsigned int aux_Num, count_Zero, count = 0;
+	unsigned long int numbers;
+
+	numbers = va_arg(ar_list, unsigned long int);
+
+	aux_Num = numbers;
+	count_Zero = 1;
+	while (aux_Num > 9)
+	{
+		aux_Num /= 10;
+		count_Zero *= 10;
+	}
+
+	while (count_Zero >= 1)
+	{
+		count += _putchar(((numbers / count_Zero) % 10) + '0');
+		count_Zero /= 10;
+	}
+	return (count);
+}

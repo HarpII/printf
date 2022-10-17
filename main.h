@@ -30,7 +30,7 @@ int print_u(va_list ar_list);
 int print_o(va_list ar_list);
 int print_x(va_list ar_list);
 int print_X(va_list ar_list);
-char *create_buffer(void);
-void write_buffer(char *buffer, int len, va_list ar_list);
+
+
 
 #endif
