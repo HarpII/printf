@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	{
 		int i;
 		va_list ar_list;
-		int (*o)(va_list);
+		int (*o)(va_list); /*function pointer, retrieves a variable arguments list*/
 
 		va_start(ar_list, format);
 
@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 				else if (format[i + 1] != '\0')
 				{
 					o = get_func(format[i + 1]);
-					count += (o ? o(ar_list) : _putchar(format[i]) + _putchar(format[i + 1]));
+					count += (o ? o(ar_list) : _putchar(format[i]) + _putchar(format[i + 1])); /*defining a macro to compile count*/
 					i++;
 				}
 			}
