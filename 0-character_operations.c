@@ -7,9 +7,10 @@
  */
 int print_c(va_list ar_list)
 {
+	int count = 0;
 	int c = va_arg(ar_list, int);
-
-	return (_putchar(c));
+	count += _putchar(c);
+	return (count);
 }
 
 /**

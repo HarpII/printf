@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * print_b - Convert of decimals in binary
- * @binary_list: Store the argumen values
+ * print_o - Convert of decimals to octal
+ * @ar_list: Store the argumen values
  * Return: The count
  */
 
-int print_b(va_list ar_list)
+int print_o(va_list ar_list)
 {
-	unsigned int i, count, Num, binary, arr[32];
+	unsigned int i, count, Num, octal, arr[11];
 
 	i = 0, count = 0;
 	Num = va_arg(ar_list, int);
@@ -23,9 +23,9 @@ int print_b(va_list ar_list)
 	{
 		while (Num > 0)
 		{
-			binary = Num % 2;
-			Num /= 2;
-			arr[count] = binary;
+			octal = Num % 8;
+			Num /= 8;
+			arr[count] = octal;
 			count++;
 		}
 		i = count - 1;
@@ -38,3 +38,5 @@ int print_b(va_list ar_list)
 	}
 	return (count);
 }
+
+
