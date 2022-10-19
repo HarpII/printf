@@ -48,6 +48,8 @@ int main(void)
     printf("String:[%s]\n", "I am a string !");
     _printf("Address:[%p]\n", addr);
     printf("Address:[%p]\n", addr);
+    _printf("Address:[%x]\n", addr);
+    printf("Address:[%lx]\n", addr);
     _printf("Percent:[%%]\n");
     printf("Percent:[%%]\n");
     _printf("Len:[%d]\n", len);
