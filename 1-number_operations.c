@@ -45,8 +45,8 @@ int print_d(va_list ar_list)
  */
 int print_u(va_list ar_list)
 {
-	unsigned int aux_Num, count_Zero, count = 0;
-	unsigned long int numbers;
+	unsigned long int aux_Num, count_Zero, numbers;
+	int count = 0;
 
 	numbers = va_arg(ar_list, unsigned long int);
 
