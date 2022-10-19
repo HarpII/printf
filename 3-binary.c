@@ -2,7 +2,7 @@
 
 /**
  * print_b - Convert of decimals in binary
- * @binary_list: Store the argumen values
+ * @ar_list: Store the argumen values
  * Return: The count
  */
 

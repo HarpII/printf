@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print hex - prints a number in
+ * print_hex - prints a number in
  * hexadecimal form.
  * @num: number to print.
  * @c: determine if to print in uppercase
@@ -18,13 +18,9 @@ int print_hex(unsigned int num, unsigned int c)
 	i = 0, count = 0;
 
 	if (c)
-	{
 		diff = 'A' - ':';
-	}
 	else
-	{
 		diff = 'a' - ':';
-	}
 
 	if (num == 0)
 	{
@@ -36,7 +32,7 @@ int print_hex(unsigned int num, unsigned int c)
 	while (num > 0)
 	{
 		hex = num % 16;
-		num/= 16;
+		num /= 16;
 		arr[count] = hex;
 		count++;
 	}
@@ -46,16 +42,11 @@ int print_hex(unsigned int num, unsigned int c)
 	while (i >= 0)
 	{
 		if (arr[i] >= 10)
-		{
 			_putchar('0' + diff + arr[i]);
-		}
 		else
-		{
 			_putchar('0' + arr[i]);
-		}
 		i--;
 	}
-	/*_putchar('0' + arr[i]);*/
 	return (count);
 }
 
@@ -71,7 +62,7 @@ int print_x(va_list ar_list)
 }
 
 /**
- * print_x - prints in uppercase hexadecimals
+ * print_X - prints in uppercase hexadecimals
  * @ar_list: list to print
  *
  * Return: number of digits printed

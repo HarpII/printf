@@ -11,7 +11,6 @@ int print_d(va_list ar_list)
 	int numbers;
 
 	count = 0;
-
 	numbers = va_arg(ar_list, int);
 
 	if (numbers < 0)
