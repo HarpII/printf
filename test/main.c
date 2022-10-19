@@ -57,6 +57,6 @@ int main(void)
     _printf("Unknown:[%r]\n");
     printf("Unknown:[%r]\n");
     _printf("String:[%S]\n", "\n");
-    _printf("String:[%S]\n", "\x01\x02\x03\x04\x05\x06\x07");
+    _printf("String:[%S]\n", "\x01\x02\x03\x04\x05\x06\x07\x1F\x7F");
     return (0);
 }
