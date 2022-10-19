@@ -56,7 +56,7 @@ int main(void)
     printf("Len:[%d]\n", len2);
     _printf("Unknown:[%r]\n");
     printf("Unknown:[%r]\n");
-    _printf("String:[%S]\n", "I \tam a \nstring !");
-    _printf("String:[%S]\n", "I \x01\x1F am a \nstring !");
+    _printf("String:[%S]\n", "\n");
+    _printf("String:[%S]\n", "\x01\x02\x03\x04\x05\x06\x07");
     return (0);
 }

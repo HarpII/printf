@@ -58,7 +58,8 @@ int print_S(va_list ar_list)
 			_putchar('\\');
 			_putchar('x');
 			_putchar('0');
-			print_hex(c, 1);
+			count += 3;
+			count += print_hex(c, 1);
 		}
 		count += _putchar(str[i]);
 	}
