@@ -11,9 +11,9 @@
  */
 int print_hex(unsigned int num, unsigned int c)
 {
-	unsigned int count, hex, arr[8];
+	unsigned int hex, arr[8];
 	char diff;
-	int i;
+	int count, i;
 
 	i = 0, count = 0;
 
@@ -33,7 +33,10 @@ int print_hex(unsigned int num, unsigned int c)
 		arr[count] = hex;
 		count++;
 	}
-	i = count - 1;
+	if (count > 0)
+	{
+		i = count - 1;
+	}
 	while (i >= 0)
 	{
 		if (arr[i] >= 10)
