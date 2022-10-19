@@ -31,5 +31,6 @@ int print_x(va_list ar_list);
 int print_X(va_list ar_list);
 int print_hex(unsigned int num, unsigned int c);
 int print_p(va_list ar_list);
+int print_S(va_list ar_list);
 
 #endif/* MAIN_H*/

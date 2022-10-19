@@ -10,6 +10,7 @@ int (*get_func(char s))(va_list)
 	op_t ops[] = {
 		{"c", print_c},
 		{"s", print_s},
+		{"S", print_S},
 		{"d", print_d},
 		{"i", print_d},
 		{"b", print_b},

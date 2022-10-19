@@ -38,7 +38,7 @@ int main(void)
     printf("Unsigned hexadecimal:[%x, %X]\n", ui, ui);
     _printf("Unsigned hexadecimal:[%x, %X]\n", 0, 0);
     printf("Unsigned hexadecimal:[%x, %X]\n", 0, 0);
-    len = _printf("[%x]\n", 0);
+    len = _printf("[%x]\n", 10);
     len2 = printf("[%X]\n", 0);
     _printf("Len:[%d]\n", len);
     printf("Len:[%d]\n", len2);
@@ -56,5 +56,7 @@ int main(void)
     printf("Len:[%d]\n", len2);
     _printf("Unknown:[%r]\n");
     printf("Unknown:[%r]\n");
+    _printf("String:[%S]\n", "I \tam a \nstring !");
+    _printf("String:[%S]\n", "I \x01\x1F am a \nstring !");
     return (0);
 }
