@@ -26,6 +26,11 @@ int print_hex(unsigned int num, unsigned int c)
 		diff = 'a' - ':';
 	}
 
+	if (num == 0)
+	{
+		_putchar('0' + num);
+	}
+
 	while (num > 0)
 	{
 		hex = num % 16;
@@ -33,10 +38,7 @@ int print_hex(unsigned int num, unsigned int c)
 		arr[count] = hex;
 		count++;
 	}
-	if (count > 0)
-	{
-		i = count - 1;
-	}
+	i = count - 1;
 	while (i >= 0)
 	{
 		if (arr[i] >= 10)
